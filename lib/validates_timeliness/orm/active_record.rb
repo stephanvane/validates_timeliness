@@ -4,7 +4,7 @@ module ValidatesTimeliness
       extend ActiveSupport::Concern
 
       def self.use_plugin_cache?
-        ::ActiveRecord::VERSION::STRING < '3.1.0'
+        true
       end
 
       included do
